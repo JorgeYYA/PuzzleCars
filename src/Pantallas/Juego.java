@@ -10,6 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+import javax.swing.JButton;
 
 public class Juego extends JFrame {
 
@@ -39,14 +40,18 @@ public class Juego extends JFrame {
 		setBounds(100, 100, 435, 458);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton coche = new JButton("coche");
+		coche.setBounds(163, 191, 89, 23);
+		contentPane.add(coche);
 		
 		JLabel fondo = new JLabel("");
+		fondo.setBounds(5, 5, 409, 400);
 		fondo.setHorizontalAlignment(SwingConstants.TRAILING);
-		contentPane.add(fondo, BorderLayout.CENTER);
+		contentPane.add(fondo);
 		Image imgfondo = new ImageIcon(this.getClass().getResource("/Screen_1_2.png")).getImage();		
 		fondo.setIcon(new ImageIcon(imgfondo));
 	}
-
 }
