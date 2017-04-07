@@ -36,6 +36,7 @@ public class Difficulty extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
+				
 				System.out.println("click");
 				
 			}
