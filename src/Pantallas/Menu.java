@@ -3,11 +3,16 @@ package Pantallas;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import controlador.Inicio;
+
 import javax.swing.JLabel;
 import javax.swing.JButton;
 
@@ -59,6 +64,15 @@ public class Menu extends JFrame {
 		contentPane.add(lblFondo);
 		Image imgChooseDificulty = new ImageIcon(this.getClass().getResource("/Menu_juego_boton2.png")).getImage();
 		chooseDificulty.setIcon(new ImageIcon(imgChooseDificulty));
+		chooseDificulty.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Inicio.ShowDifficulty();
+				Inicio.HideMenu();
+				System.out.println("click");
+				
+			}
+		});
 		
 		
 	}
