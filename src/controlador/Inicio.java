@@ -14,8 +14,7 @@ public class Inicio {
 		Difficulty dif = new Difficulty();
 		dif.setVisible(true);
 		
-		Score sco = new Score();
-		sco.setVisible(true);
+		System.out.println("ME LA PONE TIESAPACO ");
 				
 	}
 
